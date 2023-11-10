@@ -191,7 +191,7 @@ def main():
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
 
     if args.model_type == 'bert':
-        model = LSTM(input_dim=1024, hidden_dim=256, output_dim=2, num_layers=1).to(device)
+        model = LSTM(input_size=1024, hidden_size=256, num_classes=2, num_layers=1).to(device)
     elif args.model_type == 'lstm':
         model = LSTM(input_size=1, hidden_size=32, num_layers=1, num_classes=2).to(device)
     elif args.model_type == 'combined':

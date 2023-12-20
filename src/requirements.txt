@@ -12,5 +12,5 @@ torch==1.13.1
 tqdm==4.64.1
 tqdm==4.64.0
 transformers==4.35.0.dev0
-transformers==4.35.0
+transformers==4.36.0
 yellowbrick==1.5
